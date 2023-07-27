@@ -1,3 +1,7 @@
+/* Note: 
+- The child class inherit its parent height and width
+- Pseudo class: root, hover, active, first-child, last-child */
+
 * {
     padding: 0;
     margin: 0;
@@ -60,6 +64,10 @@ html {
     margin-top: 16px !important;
 }
 
+.mt-32 {
+    margin-top: 32px !important;
+}
+
 .btn {
     color: #fff;
     background-color: #000;
@@ -68,6 +76,7 @@ html {
     display: inline-block;
     margin-top: 15px;
     border: none;
+    text-align: center;
 }
 
 .btn:hover {
@@ -80,9 +89,9 @@ html {
     float: right !important;
 }
 
-#main {
+/* #main {
 
-}
+} */
 
 #header {
     height: 46px;
@@ -92,7 +101,8 @@ html {
     left: 0;
     right: 0;
     z-index: 1;
-    overflow: hidden;
+    /* hide the children that overflow the parent, initial value: visible
+    overflow: hidden;  */
 }
 
 #nav {
@@ -153,10 +163,17 @@ html {
     font-size: 12px;
 }
 
+#header .mobile-menu-btn {
+    position: absolute; 
+    top : 0; 
+    right: 0;
+    display: none;
+}
+
 #header .mobile-menu-btn,
 #header .search-button {   
     float: right; 
-    padding: 0 21px;     
+    padding: 0 21px;
 }
 
 #header .search-button:hover {   
@@ -175,7 +192,7 @@ html {
 #header .menu-icon,
 #header .search-icon {
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 46px;
 }
 
@@ -242,7 +259,7 @@ html {
 }
 
 #content .member-list {
-    padding-top: 48px;
+    padding-top: 32px;
     /* overflow: hidden; */
 }
 
@@ -294,7 +311,7 @@ html {
 
 /* Places */
 .place-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img {
@@ -340,6 +357,15 @@ html {
 .contact-info i[class*="ti-"] {
     width: 30px;
     display: inline-block;    
+}
+
+.contact-info a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-form {
