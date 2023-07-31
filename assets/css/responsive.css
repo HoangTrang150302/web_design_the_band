@@ -1,13 +1,14 @@
+    /* Convert px to em to avoid error on different browsers */
     /* PC */
-    @media (min-width: 1024px) {
+    @media (min-width: 64em) {
     }
 
     /* Tablet */
-    @media (min-width: 740px) and (max-width: 1023px) {
+    @media (min-width: 46.25em) and (max-width: 63.9375em) {
     }
 
     /* Tablet & Mobile */
-    @media (min-width: 740px) and (max-width: 1023px) {
+    @media (min-width: 46.25em) and (max-width: 63.9375em) {
         /* The width of the button need to be at least 48px for us to use our figure to click on */
         #nav .subnav a {
             padding: 5px 12px;
@@ -40,7 +41,7 @@
     }
 
     /* Mobile */
-    @media (max-width: 740px) {   
+    @media (max-width: 46.1875em) {   
         .s-full-width {
             width: 100% !important;
         }
@@ -71,7 +72,7 @@
 
         #nav li a {
             padding: 1px 24px; 
-            /* kich thuoc toi thieu de tay an duoc tren dien thoai */
+            /* min size to click on mobile 48px */
         }
 
         #nav > li {
